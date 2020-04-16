@@ -1,0 +1,45 @@
+-
+  title: 工作台
+  icon: fa-amazon
+  code: workbench
+  items:
+    -
+      index: /tasks/read/current
+      title: 个人工作台
+      code: tasks-current
+- title: 工作计划
+  icon: fa-facebook
+  code: work-center
+  items:
+    - index: /tasks/read/all
+      title: 计划列表
+      code: tasks-all
+    - index: /tasks/edit/current
+      title: 计划管理
+      code: tasks-management
+- title: 系统设置
+  icon: fa-apple
+  code: system-setting
+  items:
+    - index: /
+      title: 计划类型管理
+      code: plan-type
+- title: 测试页面
+  icon: fa-flickr
+  code: test
+  items:
+    - index: /system-params/list/1
+      title: 系统参数列表页
+      code: system-param-list
+    - index: /test-tpl/list/1
+      title: 模板测试列表页
+      code: test-tpl-list
+    - index: /demo/profile-basic
+      title: 详情页
+      code: demo-detail
+    - index: /demo/table-list
+      title: table-list
+      code: table-list
+    - index: /demo/form-advance
+      title: form-advance
+      code: form-advance

@@ -1,0 +1,366 @@
+modelChangeFlag:
+ -
+  id: 0
+  name: 无
+ -
+  id: 1
+  name: 新增
+ -
+  id: 2
+  name: 变更
+approveStatus:
+ -
+  id: 0
+  name: 未发起
+ -
+  id: 1
+  name: 审批中
+ -
+  id: 2
+  name: 通过
+ -
+  id: 3
+  name: 不通过
+ -
+  id: 4
+  name: 驳回
+ -
+  id: -1
+  name: 撤回
+flowStatus:
+ -
+  id: 1
+  name: 提交
+ -
+  id: 2
+  name: 审批通过
+ -
+  id: 3
+  name: 终止
+ -
+  id: 4
+  name: 驳回
+dynamicFieldType:
+ -
+  valueType: '1'
+  type: string
+ -
+  valueType: '2'
+  type: number
+ -
+  valueType: '3'
+  type: number
+ -
+  valueType: '4'
+  type: bool
+ -
+  valueType: '5'
+  type: enum
+ -
+  valueType: '6'
+  type: date
+playerMarkSaveType:
+ -
+  name: delete
+  type: 2
+ -
+  name: update
+  type: 1
+ -
+  name: add
+  type: 0
+authRule:
+ read: 1
+ update: 2
+ create: 4
+ delete: 8
+ importData: 16
+ uploadFile: 32
+customerMenuType:
+ -
+  label: 侧边菜单无层级
+  value: sideMenuBare
+ -
+  label: 侧边菜单有层级
+  value: sideMenu
+ -
+  label: 内容扩展
+  value: extraPanel
+ -
+  label: 模型交互
+  value: interactivePanel
+ -
+  label: 顶部工具栏按钮
+  value: toolBar
+paramsType:
+ -
+  id: 1
+  code: systemText
+  name: 系统text类型
+ -
+  id: 2
+  code: tagClass
+  name: 位号类别
+ -
+  id: 3
+  code: documentClass
+  name: 文档类别
+ -
+  id: 4
+  code: dict
+  name: 数据字典
+ -
+  id: 0
+  code: customerText
+  name: 自定义文本类型
+ -
+  id: 5
+  code: uploadImage
+  name: 图片类型
+meeting:
+ dictIdForType: 11e03cfa-c347-4e3d-8652-67009cbdaa05
+ dictForName: MeetingType
+ currentStatus:
+  -
+   id: 1
+   code: all
+   name: 我发起的
+   desc: 作为创建人
+  -
+   id: 2
+   code: before
+   name: 待开会议
+   desc: 作为参与人
+  -
+   id: 3
+   code: after
+   name: 已开会议
+messageType:
+ -
+  value: 0
+  label: 全部消息
+ -
+  value: 1
+  label: 已读消息
+ -
+  value: 2
+  label: 未读消息
+conditionType:
+ -
+  id: 1
+  name: 分类
+ -
+  id: 2
+  name: 层级
+ -
+  id: 3
+  name: 目录
+ -
+  id: 4
+  name: 通用属性
+userType:
+ -
+  id: 1
+  name:  管理员
+ -
+  id: 2
+  name: 安监
+ -
+  id: 3
+  name: 厂内人员
+ -
+  id: 4
+  name: 外委人员
+nationOptions:
+ -
+  id: 0
+  name: 汉族
+ -
+  id: 1
+  name: 蒙古族
+ -
+  id: 2
+  name: 回族
+ -
+  id: 3
+  name: 藏族
+ -
+  id: 4
+  name: 维吾尔族
+ -
+  id: 5
+  name: 苗族
+ -
+  id: 6
+  name: 彝族
+ -
+  id: 7
+  name: 壮族
+ -
+  id: 8
+  name: 布依族
+ -
+  id: 9
+  name: 朝鲜族
+ -
+  id: 10
+  name: 满族
+ -
+  id: 11
+  name: 侗族
+ -
+  id: 12
+  name: 瑶族
+ -
+  id: 13
+  name: 白族
+ -
+  id: 14
+  name: 土家族
+ -
+  id: 15
+  name: 哈尼族
+ -
+  id: 16
+  name: 哈萨克族
+ -
+  id: 17
+  name: 傣族
+ -
+  id: 18
+  name: 黎族
+ -
+  id: 19
+  name: 傈僳族
+ -
+  id: 20
+  name: 佤族
+ -
+  id: 21
+  name: 畲族
+ -
+  id: 22
+  name: 高山族
+ -
+  id: 23
+  name: 拉祜族
+ -
+  id: 24
+  name: 水族
+ -
+  id: 25
+  name: 东乡族
+ -
+  id: 26
+  name: 纳西族
+ -
+  id: 27
+  name: 景颇族
+ -
+  id: 28
+  name: 柯尔克孜族
+ -
+  id: 29
+  name: 土族
+ -
+  id: 30
+  name: 达斡尔族
+ -
+  id: 31
+  name: 仫佬族
+ -
+  id: 32
+  name: 羌族
+ -
+  id: 33
+  name: 布朗族
+ -
+  id: 34
+  name: 撒拉族
+ -
+  id: 35
+  name: 毛难族
+ -
+  id: 36
+  name: 仡佬族
+ -
+  id: 37
+  name: 锡伯族
+ -
+  id: 38
+  name: 阿昌族
+ -
+  id: 39
+  name: 普米族
+ -
+  id: 40
+  name: 塔吉克族
+ -
+  id: 41
+  name: 怒族
+ -
+  id: 42
+  name: 乌孜别克族
+ -
+  id: 43
+  name: 俄罗斯族
+ -
+  id: 44
+  name: 鄂温克族
+ -
+  id: 45
+  name: 崩龙族
+ -
+  id: 46
+  name: 保安族
+ -
+  id: 47
+  name: 裕固族
+ -
+  id: 48
+  name: 京族
+ -
+  id: 49
+  name: 塔塔尔族
+ -
+  id: 50
+  name: 独龙族
+ -
+  id: 51
+  name: 鄂伦春族
+ -
+  id: 52
+  name: 赫哲族
+ -
+  id: 53
+  name: 门巴族
+ -
+  id: 54
+  name: 珞巴族
+ -
+  id: 55
+  name: 基诺族
+ -
+  id: 56
+  name: 其他
+equipColorOptions:
+ -
+  label: 红色
+  color: red
+  title: 京能宁东-管理
+ -
+  label: 黄色
+  color: yellow
+  title: 京能宁东-运行
+ -
+  label: 橙色
+  color: orange
+  title: 京能宁东-检修
+ -
+  label: 蓝色
+  color: blue
+  title: 厂外
+ -
+  label: 绿色
+  color: green
+  title: 参观人员

@@ -1,0 +1,42 @@
+{
+  "logo": {
+    "url": "http://www.baidu.com",
+    "img": "//img.alicdn.com/tps/TB16hl5LpXXXXXRXVXXXXXXXXXX-198-46.png"
+  },
+  "layoutMenu": {
+    "userSubMenus": [{
+      "url": "http://www.baidu.com",
+      "label": "抽奖活动"
+    }],
+    "projectMenus": [{
+      "url": "http://www.baidu.com",
+      "code": "Plant",
+      "icon": "fa-home",
+      "label": "WIZ Plant"
+    },{
+      "url": "http://www.baidu.com",
+      "code": "Data",
+      "icon": "fa-adn",
+      "label": "WIZ Data"
+    },{
+      "url": "http://www.baidu.com",
+      "code": "Plant",
+      "icon": "fa-users",
+      "label": "WIZ Plant"
+    },{
+      "url": "http://www.baidu.com",
+      "code": "Box",
+      "icon": "fa-bandcamp",
+      "label": "WIZ Box"
+    },{
+      "url": "http://www.baidu.com",
+      "code": "EASC",
+      "icon": "fa-btc",
+      "label": "WIZ EASC"
+    }],
+    "topbarMenus": [{
+      "url": "http://www.baidu.com",
+      "label": "关于我们"
+    }]
+  }
+}

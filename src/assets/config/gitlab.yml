@@ -1,0 +1,34 @@
+web:
+  image: 'gitlab/gitlab-ce:latest'
+  restart: always
+  hostname: 'uiserver01.wiz.com'
+  environment:
+    GITLAB_OMNIBUS_CONFIG: |
+      external_url 'http://uiserver01.wiz.com:9090',
+      gitlab_rails['db_adapter'] = "postgresql"
+      gitlab_rails['db_encoding'] = "unicode"
+      gitlab_rails['db_collation'] = nil
+      gitlab_rails['db_database'] = "gitlab"
+      gitlab_rails['db_pool'] = 10
+      gitlab_rails['db_username'] = "postgres"
+      gitlab_rails['db_password'] = "postgres"
+      gitlab_rails['db_host'] = "uiserver01.wiz.com"
+      gitlab_rails['db_port'] = 5432
+      gitlab_rails['db_socket'] = nil
+      gitlab_rails['db_sslmode'] = nil
+      gitlab_rails['db_sslcompression'] = 0
+      gitlab_rails['db_sslrootcert'] = nil
+      gitlab_rails['db_prepared_statements'] = false
+      gitlab_rails['db_statements_limit'] = 1000
+      gitlab_rails['redis_host'] = "uiserver01.wiz.com"
+      gitlab_rails['redis_port'] = 6379
+      gitlab_rails['redis_ssl'] = false
+      gitlab_rails['redis_password'] = nil
+      gitlab_rails['redis_database'] = 0
+  ports:
+    - '9090:9090'
+    - '2224:22'
+  volumes:
+    - '/apps/gitlab/config:/etc/gitlab'
+    - '/apps/gitlab/logs:/var/log/gitlab'
+    - '/apps/gitlab/data:/var/opt/gitlab'
